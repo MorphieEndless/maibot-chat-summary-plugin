@@ -8,7 +8,7 @@
     "url": "https://github.com/Bdbmzwsc"
   },
   "homepage_url": "https://github.com/Bdbmzwsc/maibot-chat-summary-plugin",
-  "repository_url": "https://github.com/HyperSharkawa/maibot-chat-summary-plugin",
+  "repository_url": "https://github.com/Bdbmzwsc/maibot-chat-summary-plugin",
   "license": "GPLv3",
   "host_application": {
     "min_version": "0.12.0"
@@ -22,4 +22,5 @@
   "default_locale": "CN",
   "locales_path": "_locales",
   "id": "bdbmzwsc.maibot-chat-summary-plugin"
+
 }
