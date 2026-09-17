@@ -1,26 +1,37 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
+  "id": "bdbmzwsc.maibot-chat-summary-plugin",
+  "version": "1.1.0",
   "name": "聊天总结",
-  "version": "1.0.0",
-  "description": "根据聊天记录，生成聊天总结",
+  "description": "根据群聊/私聊历史记录，调用大模型生成聊天总结。",
   "author": {
     "name": "雪碧",
     "url": "https://github.com/Bdbmzwsc"
   },
-  "homepage_url": "https://github.com/Bdbmzwsc/maibot-chat-summary-plugin",
-  "repository_url": "https://github.com/Bdbmzwsc/maibot-chat-summary-plugin",
   "license": "GPLv3",
-  "host_application": {
-    "min_version": "0.12.0"
+  "urls": {
+    "repository": "https://github.com/Bdbmzwsc/maibot-chat-summary-plugin",
+    "homepage": "https://github.com/Bdbmzwsc/maibot-chat-summary-plugin"
   },
-  "keywords": [
-    "分析"
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "2.0.0",
+    "max_version": "2.99.99"
+  },
+  "plugin_type": "extension",
+  "dependencies": [],
+  "capabilities": [
+    "send.text",
+    "send.forward",
+    "message.get_recent",
+    "message.get_by_time_in_chat",
+    "llm.generate"
   ],
-  "categories": [
-    "Data Analysis & Insights"
-  ],
-  "default_locale": "CN",
-  "locales_path": "_locales",
-  "id": "bdbmzwsc.maibot-chat-summary-plugin"
-
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": ["zh-CN"]
+  }
 }
